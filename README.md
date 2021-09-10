@@ -1,5 +1,7 @@
 # Test TODO-List
 
+`yarrn start`
+
 ## auth
 ### Administrator
 - username: admin
