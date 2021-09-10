@@ -1,0 +1,26 @@
+@import "src/variables";
+
+.tbg-profile{
+  display: flex;
+
+  &__avatar,
+  &__user-data{
+    min-height: 15rem;
+    padding: 1rem;
+    border: 1px solid $colorBorder;
+    border-radius: $borderRadius;
+    background-color: $colorWhite;
+  }
+
+  &__avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 15rem;
+    margin-right: $spacer;
+  }
+
+  &__user-data{
+    flex-grow: 1;
+  }
+}

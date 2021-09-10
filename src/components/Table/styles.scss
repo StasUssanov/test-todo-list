@@ -1,0 +1,21 @@
+@import "src/variables";
+
+.tbg-table{
+  padding: 1rem;
+  border-spacing: unset;
+  border-radius: $borderRadius;
+  border: 1px solid $colorBorder;
+  background-color: $colorWhite;
+
+  td{
+    padding: 0.5rem;
+    text-align: center;
+    border-bottom: 1px solid $colorBorder;
+  }
+
+  tr{
+    &:last-child td{
+      border-bottom: unset;
+    }
+  }
+}

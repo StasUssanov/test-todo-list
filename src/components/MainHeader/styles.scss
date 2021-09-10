@@ -1,0 +1,21 @@
+@import "src/variables";
+
+.tbg-main-header{
+  z-index: $zIndexHeader;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: $headerHeight;
+  padding: 0 1.5rem;
+  background-color: $colorWhite;
+  border-bottom: 1px solid $colorBorder;
+  box-shadow: $boxShadow;
+
+  &>* {
+    margin-left: $spacer;
+  }
+
+  &__username{
+    margin-right: $spacer;
+  }
+}

@@ -1,0 +1,37 @@
+@import "src/variables";
+
+.tbg-sign-in{
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  padding: 0.75rem 1rem;
+  background-color: $colorWhite;
+  border: 1px solid $colorBorder;
+  border-radius: $borderRadius;
+  box-shadow: 1px 2px 5px 1px rgba(black, 0.25);
+
+  &>*{
+    margin-bottom: $spacer;
+    &:last-child{
+      margin-bottom: unset;
+    }
+  }
+
+  &__alert{
+    font-size: 0.9rem;
+    color: $colorAlert;
+  }
+
+  &__actions{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+
+    &>*{
+      margin-right: $spacer;
+      &:last-child{
+        margin-right: unset;
+      }
+    }
+  }
+}

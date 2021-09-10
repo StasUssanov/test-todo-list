@@ -1,0 +1,35 @@
+@import "src/variables";
+
+.tbg-drop-down{
+  position: relative;
+  display: inline-block;
+
+  &__items{
+    z-index: $zIndexDropDown;
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 8rem;
+    padding: 0.25rem 0;
+    background-color: $colorWhite;
+    border: 1px solid $colorBorder;
+    border-radius: $borderRadius;
+    box-shadow: $boxShadow;
+  }
+
+  &__button{
+    cursor: pointer;
+    padding: 0.5rem;
+
+    font-family: $fontFamilyRoot;
+    background-color: inherit;
+    border: unset;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+
+    &:hover{
+      background-color: rgba($colorBorder, 0.25);
+    }
+  }
+}

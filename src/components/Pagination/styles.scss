@@ -1,0 +1,37 @@
+@import "src/variables";
+
+.tbg-pagination{
+  display: flex;
+  justify-content: center;
+  margin-top: $spacer;
+  gap: $spacer;
+
+  &-item{
+    cursor: pointer;
+    min-width: 2rem;
+    padding:  0.5rem 1rem;
+    font-family: $fontFamilyRoot;
+    font-size: 0.75rem;
+    color: $colorText;
+    background-color: $colorWhite;
+    border: 1px solid $colorBorder;
+    border-radius: $borderRadius;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+
+    &:hover{
+      color: $colorTextInversion;
+      background-color: $colorPrimaryDark;
+      border-color: $colorPrimaryDark;
+    }
+
+    &__selected,
+    &__selected:hover{
+      cursor: default;
+      font-weight: 600;
+      color: $colorPrimaryDark;
+      background-color: $colorWhite;
+      border-color: $colorPrimaryDark;
+      box-shadow: 0 0 0 3px rgba($colorPrimaryDark, 0.25);
+    }
+  }
+}

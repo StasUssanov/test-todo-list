@@ -1,0 +1,19 @@
+@import "src/variables";
+
+.tbg-button{
+  cursor: pointer;
+  min-width: 7rem;
+  padding:  0.5rem 1rem;
+  font-family: $fontFamilyRoot;
+  font-size: 1rem;
+  color: $colorTextInversion;
+  background-color: $colorPrimary;
+  border: 1px solid $colorPrimary;
+  border-radius: $borderRadius;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+
+  &:hover{
+    background-color: $colorPrimaryDark;
+    border-color: $colorPrimaryDark;
+  }
+}

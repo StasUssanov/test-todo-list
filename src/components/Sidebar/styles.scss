@@ -1,0 +1,33 @@
+@import "src/variables";
+
+.tbg-sidebar{
+  display: flex;
+  flex-direction: column;
+  min-width: 15rem;
+  padding: 1rem 0;
+  background-color: $colorWhite;
+  border-right: 1px solid $colorBorder;
+
+  &-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  $spacer/2 $spacer;
+    padding: 1rem;
+    color: $colorText;
+    text-decoration: none;
+    border: 1px solid $colorBorder;
+    border-radius: $borderRadius;
+
+    &:hover{
+      color: $colorPrimary;
+      border-color: $colorPrimaryDark;
+    }
+
+    &--active{
+      cursor: default;
+      color: $colorPrimary;
+      border-color: $colorPrimaryDark;
+    }
+  }
+}

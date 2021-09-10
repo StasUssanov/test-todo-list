@@ -1,0 +1,63 @@
+@import "src/variables";
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  min-width: 450px;
+  min-height: 100vh;
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+body{
+  min-width: inherit;
+  min-height: inherit;
+  margin: 0;
+  font-family: $fontFamilyRoot;
+  font-size: inherit;
+  line-height: inherit;
+  background-color: #efefef;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  min-width: inherit;
+  min-height: inherit;
+}
+
+.tbg-content{
+  display: flex;
+  min-height: calc(100vh - #{$headerHeight});
+
+  &--sing-in-form{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+main{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+
+}
+
+.tbg-textarea,
+.tbg-input-text,
+.tbg-select{
+  outline: unset;
+  padding: 0.5rem;
+  font-family: $fontFamilyRoot;
+  border: 1px solid $colorBorder;
+  border-radius: $borderRadius;
+
+  &:focus{
+    border-color: $colorPrimaryDark;
+    box-shadow: 0 0 0 3px rgba($colorPrimaryDark, 0.25);
+  }
+}
